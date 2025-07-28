@@ -21,7 +21,7 @@
             if (hash === "#ocasion") return false;
 
             // Check if on /detalle-vehiculo/ detail page with hash vehicle ID (no 'id=' prefix)
-            if (path.includes("/detalle-vehiculo/") && hash.startsWith("#")) {
+            if (path.includes("/test-links/detalle-vehiculo/") && hash.startsWith("#")) {
                 const vehicleId = hash.substring(1);  // remove leading '#'
                 if (vehicleId.startsWith("mdl-vo-")) return false; // Used vehicle
                 if (vehicleId) return true; // New vehicle
